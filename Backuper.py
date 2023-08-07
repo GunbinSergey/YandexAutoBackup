@@ -76,6 +76,9 @@ if check_date() == True:
     #print(lis)
     lis = get_list_of_file("load_file.txt")
     for r in lis:
-        upload_file(r, "Rep/" + r)  
+        rsplit = r.split('/')
+        rsplit.reverse()
+        fn = rsplit[0]        
+        upload_file(r, "Rep/" + fn)  
    
 

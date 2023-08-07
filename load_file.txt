@@ -1,2 +1,3 @@
 load_file.txt
 date.txt
+/home/vboxuser/YandexBackuper/dist/date2.txt
