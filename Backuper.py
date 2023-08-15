@@ -6,12 +6,10 @@ Created on Sun Aug  6 14:34:39 2023
 @author: vboxuser
 """
 
-#https://oauth.yandex.ru/authorize?response_type=token&client_id=e5fb4c6ee3384dcd92e9f7342fa22ede
-#y0_AgAAAAAZeKjiAADLWwAAAADpkh41fW-zx6dzRGKAasGlVADGbf0wVak
-#y0_AgAAAAAZeKjiAApMHwAAAADpkgaVxYZu7EO9ROi18GTYBMUPw5TnNQA
 
 import requests
 import datetime
+from KeyYandex import get_key
 
 def create_folder(path):
     """Создание папки. \n path: Путь к создаваемой папке."""
@@ -67,7 +65,7 @@ def put_new_date(act_date):
 
         
 
-token = "y0_AgAAAAAZeKjiAADLWwAAAADpkh41fW-zx6dzRGKAasGlVADGbf0wVak"
+token = get_key()
 URL = 'https://cloud-api.yandex.net/v1/disk/resources'
 headers = {'Content-Type': 'application/json', 'Accept': 'application/json', 'Authorization': f'OAuth {token}'}
 

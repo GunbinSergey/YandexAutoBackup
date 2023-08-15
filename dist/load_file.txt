@@ -1,0 +1,3 @@
+load_file.txt
+date.txt
+C:/Users/Gunbi/AppData/Roaming/RenPy/Monika After Story/persistent
